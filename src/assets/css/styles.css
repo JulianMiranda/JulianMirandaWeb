@@ -207,8 +207,8 @@ body {
 .layout__menu {
 	display: block;
 	position: absolute;
-	top: 0;
-	right: -10.5rem;
+	top: 1;
+	right: 1rem;
 	min-width: 11rem;
 	background-color: var(--color-transparent);
 }

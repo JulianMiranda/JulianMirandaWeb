@@ -1,3 +1,4 @@
+import {Link, NavLink} from 'react-router-dom';
 import yo from '../assets/img/yo2.jpeg';
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
@@ -17,44 +18,44 @@ export const Common = ({children}: any) => {
 						<h2 className="user-info__name">Julian Miranda</h2>
 						<h4 className="user-info__job">Desarrollador FullStack</h4>
 					</div>
-					<nav className="layout__menu">
+					{/* <nav className="layout__menu">
 						<ul className="menu__list">
 							<li className="menu__option">
-								<a href="home" className="menu__link menu__link--active">
+								<NavLink to="home" className="menu__link menu__link--active">
 									<i className="menu__icon fa-solid fa-house"></i>
 									<span className="menu__overlay">Home</span>
-								</a>
+								</NavLink>
 							</li>
 
 							<li className="menu__option">
-								<a href="about-me" className="menu__link">
+								<NavLink to="about-me" className="menu__link">
 									<i className="menu__icon fa-solid fa-user"></i>
 									<span className="menu__overlay">Sobre mi</span>
-								</a>
+								</NavLink>
 							</li>
 
 							<li className="menu__option">
-								<a href="curriculum" className="menu__link">
+								<NavLink to="curriculum" className="menu__link">
 									<i className="menu__icon fa-solid fa-graduation-cap"></i>
 									<span className="menu__overlay">Curriculum</span>
-								</a>
+								</NavLink>
 							</li>
 
 							<li className="menu__option">
-								<a href="portfolio" className="menu__link">
+								<NavLink to="portfolio" className="menu__link">
 									<i className="menu__icon fa-solid fa-briefcase"></i>
 									<span className="menu__overlay">Portafolio</span>
-								</a>
+								</NavLink>
 							</li>
 
 							<li className="menu__option">
-								<a href="contact" className="menu__link">
+								<NavLink to="contact" className="menu__link">
 									<i className="menu__icon fa-solid fa-envelope"></i>
 									<span className="menu__overlay">Contacto</span>
-								</a>
+								</NavLink>
 							</li>
 						</ul>
-					</nav>
+					</nav> */}
 					<div className="user-info__links">
 						<ul className="links__social">
 							<li className="social__option">
