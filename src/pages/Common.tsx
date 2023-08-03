@@ -1,10 +1,8 @@
-import {Link, NavLink} from 'react-router-dom';
 import yo from '../assets/img/yo2.jpeg';
-import useScreenSize from '../hooks/useScreenSize';
+import pdf from '../assets/pdf/Curriculum_domitila.pdf';
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 export const Common = ({children}: any) => {
-	const {width} = useScreenSize();
 	return (
 		<div className="layout">
 			<aside className="layout__aside">
@@ -20,70 +18,53 @@ export const Common = ({children}: any) => {
 						<h2 className="user-info__name">Julian Miranda</h2>
 						<h4 className="user-info__job">Desarrollador FullStack</h4>
 					</div>
-					{/* <nav className="layout__menu">
-						<ul className="menu__list">
-							<li className="menu__option">
-								<NavLink to="home" className="menu__link menu__link--active">
-									<i className="menu__icon fa-solid fa-house"></i>
-									<span className="menu__overlay">Home</span>
-								</NavLink>
-							</li>
 
-							<li className="menu__option">
-								<NavLink to="about-me" className="menu__link">
-									<i className="menu__icon fa-solid fa-user"></i>
-									<span className="menu__overlay">Sobre mi</span>
-								</NavLink>
-							</li>
-
-							<li className="menu__option">
-								<NavLink to="curriculum" className="menu__link">
-									<i className="menu__icon fa-solid fa-graduation-cap"></i>
-									<span className="menu__overlay">Curriculum</span>
-								</NavLink>
-							</li>
-
-							<li className="menu__option">
-								<NavLink to="portfolio" className="menu__link">
-									<i className="menu__icon fa-solid fa-briefcase"></i>
-									<span className="menu__overlay">Portafolio</span>
-								</NavLink>
-							</li>
-
-							<li className="menu__option">
-								<NavLink to="contact" className="menu__link">
-									<i className="menu__icon fa-solid fa-envelope"></i>
-									<span className="menu__overlay">Contacto</span>
-								</NavLink>
-							</li>
-						</ul>
-					</nav> */}
 					<div className="user-info__links">
 						<ul className="links__social">
 							<li className="social__option">
-								<a href="#" className="social__link">
+								<a
+									target="_blank"
+									rel="noopener noreferrer"
+									href="https://www.facebook.com/profile.php?id=100095380963227"
+									className="social__link"
+								>
 									<i className="social__icon fa-brands fa-facebook"></i>
 								</a>
 							</li>
 							<li className="social__option">
-								<a href="#" className="social__link">
+								<a
+									target="_blank"
+									rel="noopener noreferrer"
+									href="https://www.linkedin.com/in/julian-miranda-ur%C3%ADa-00b42a18a/"
+									className="social__link"
+								>
 									<i className="social__icon fa-brands fa-linkedin"></i>
 								</a>
 							</li>
 							<li className="social__option">
-								<a href="#" className="social__link">
-									<i className="social__icon fa-brands fa-instagram"></i>
+								<a
+									target="_blank"
+									rel="noopener noreferrer"
+									href="https://github.com/JulianMiranda"
+									className="social__link"
+								>
+									<i className="social__icon fa-brands fa-github"></i>
 								</a>
 							</li>
 						</ul>
 					</div>
 					<div className="user-info__buttons">
-						<a href="#" className="user-info__btn">
+						<a
+							href={pdf}
+							rel="noopener noreferrer"
+							download="Curriculum_JulianMiranda.pdf"
+							className="user-info__btn"
+						>
 							Descargar CV
 						</a>
 					</div>
 					<footer className="user-info__footer">
-						&copy; 2023 Julian Miranda Web
+						&copy; {new Date().getFullYear()} Julian Miranda Web
 					</footer>
 				</section>
 			</aside>

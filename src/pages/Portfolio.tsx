@@ -16,7 +16,11 @@ export const Portfolio = () => {
 					<figure className="gallery__item">
 						<div className="gallery__container-image">
 							<a href="#" className="gallery__link">
-								<img className="gallery__image" src={app5} alt="" />
+								<img
+									className="gallery__image animate__animated animate__fadeIn"
+									src={app5}
+									alt=""
+								/>
 							</a>
 						</div>
 						<figcaption className="gallery__title">Baria Envios</figcaption>
@@ -26,7 +30,11 @@ export const Portfolio = () => {
 					<figure className="gallery__item">
 						<div className="gallery__container-image">
 							<a href="#" className="gallery__link">
-								<img className="gallery__image" src={app1} alt="" />
+								<img
+									className="gallery__image animate__animated animate__fadeIn"
+									src={app1}
+									alt=""
+								/>
 							</a>
 						</div>
 						<figcaption className="gallery__title">Encarga Envios</figcaption>
@@ -36,7 +44,11 @@ export const Portfolio = () => {
 					<figure className="gallery__item">
 						<div className="gallery__container-image">
 							<a href="#" className="gallery__link">
-								<img className="gallery__image" src={app2} alt="" />
+								<img
+									className="gallery__image animate__animated animate__fadeIn"
+									src={app2}
+									alt=""
+								/>
 							</a>
 						</div>
 						<figcaption className="gallery__title">Baria</figcaption>
@@ -46,7 +58,11 @@ export const Portfolio = () => {
 					<figure className="gallery__item">
 						<div className="gallery__container-image">
 							<a href="#" className="gallery__link">
-								<img className="gallery__image" src={app3} alt="" />
+								<img
+									className="gallery__image animate__animated animate__fadeIn"
+									src={app3}
+									alt=""
+								/>
 							</a>
 						</div>
 						<figcaption className="gallery__title">Encarga</figcaption>
@@ -56,7 +72,11 @@ export const Portfolio = () => {
 					<figure className="gallery__item">
 						<div className="gallery__container-image">
 							<a href="#" className="gallery__link">
-								<img className="gallery__image" src={app4} alt="" />
+								<img
+									className="gallery__image animate__animated animate__fadeIn"
+									src={app4}
+									alt=""
+								/>
 							</a>
 						</div>
 						<figcaption className="gallery__title">GTS</figcaption>

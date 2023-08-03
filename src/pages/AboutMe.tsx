@@ -65,9 +65,10 @@ export const AboutMe = () => {
 								<div className="content">
 									<h3 className="service__title">Programación</h3>
 									<p className="service__description">
-										Lorem ipsum dolor sit amet consectetur adipisicing elit.
-										Rerum rem libero commodi ipsam, consequuntur eos enim
-										aliquid repellendus amet exercitationem.
+										Como apasionado desarrollador web full stack, mi enfoque
+										radica en la creación de soluciones digitales innovadoras y
+										funcionales que impulsan resultados significativos para los
+										usuarios.
 									</p>
 								</div>
 							</article>
@@ -78,9 +79,9 @@ export const AboutMe = () => {
 								<div className="content">
 									<h3 className="service__title">Formación</h3>
 									<p className="service__description">
-										Lorem ipsum dolor sit amet consectetur adipisicing elit.
-										Rerum rem libero commodi ipsam, consequuntur eos enim
-										aliquid repellendus amet exercitationem.
+										Graduado en Ingeniería Automática por la Universidad Central
+										de las Villas, mi formación sólida me capacita para abordar
+										desafíos tecnológicos de manera integral.
 									</p>
 								</div>
 							</article>
@@ -91,9 +92,9 @@ export const AboutMe = () => {
 								<div className="content">
 									<h3 className="service__title">Desarrollo</h3>
 									<p className="service__description">
-										Lorem ipsum dolor sit amet consectetur adipisicing elit.
-										Rerum rem libero commodi ipsam, consequuntur eos enim
-										aliquid repellendus amet exercitationem.
+										Mi especialidad es el desarrollo de aplicaciones móviles y
+										web de alta calidad, diseñadas para brindar experiencias
+										fluidas y atractivas que superen expectativas.
 									</p>
 								</div>
 							</article>
@@ -104,9 +105,9 @@ export const AboutMe = () => {
 								<div className="content">
 									<h4 className="service__title">Administracion</h4>
 									<p className="service__description">
-										Lorem ipsum dolor sit amet consectetur adipisicing elit.
-										Rerum rem libero commodi ipsam, consequuntur eos enim
-										aliquid repellendus amet exercitationem.
+										Gestiono mis proyectos con precisión y creatividad,
+										equilibrando una visión estratégica con una implementación
+										técnica sólida para lograr resultados exitosos y duraderos.
 									</p>
 								</div>
 							</article>
@@ -127,10 +128,11 @@ export const AboutMe = () => {
 								</div>
 								<div className="review__description">
 									<p className="review__text">
-										Lorem ipsum dolor sit amet consectetur adipisicing elit.
-										Quisquam quos sapiente a in? Numquam asperiores architecto
-										repellendus nisi consectetur? Tempora doloremque commodi
-										architecto vel est autem perferendis alias quidem animi!
+										Trabajar con Julian Miranda fue un placer absoluto. Su
+										seriedad y profesionalismo se destacaron desde el principio.
+										Demostró un buen desempeño en cada etapa del proyecto y
+										cumplió con todas las tareas dentro de los plazos
+										establecidos. ¡Altamente recomendado!"
 									</p>
 								</div>
 								<div className="review__author">
@@ -153,16 +155,17 @@ export const AboutMe = () => {
 								</div>
 								<div className="review__description">
 									<p className="review__text">
-										Lorem ipsum dolor sit amet consectetur adipisicing elit.
-										Quisquam quos sapiente a in? Numquam asperiores architecto
-										repellendus nisi consectetur? Tempora doloremque commodi
-										architecto vel est autem perferendis alias quidem animi!
+										"No puedo estar más contento con los resultados que [Tu
+										Nombre] entregó. Es un desarrollador web excepcionalmente
+										competente y cumplidor. Su enfoque serio y habilidades
+										profesionales garantizan un desempeño sobresaliente en cada
+										proyecto."
 									</p>
 								</div>
 								<div className="review__author">
 									<div className="review__author-info">
-										<h4 className="review__name">Ruben Perez</h4>
-										<h5 className="review__company">FullStack S.A</h5>
+										<h4 className="review__name">Miguel Oy</h4>
+										<h5 className="review__company">CEO Way | U2</h5>
 									</div>
 									<div className="review__author-icon">
 										<i className="review__icon fa-solid fa-quote-right"></i>
@@ -171,7 +174,7 @@ export const AboutMe = () => {
 							</article>
 						</div>
 					</section>
-					<section className="about__clients">
+					{/* <section className="about__clients">
 						<header className="clients__header">
 							<h2 className="clients__title">Clientes</h2>
 						</header>
@@ -202,8 +205,8 @@ export const AboutMe = () => {
 								</a>
 							</article>
 						</div>
-					</section>
-					<section className="about__prices">
+					</section> */}
+					{/* <section className="about__prices">
 						<header className="prices__header">
 							<h2 className="prices__title">Precios</h2>
 						</header>
@@ -279,7 +282,7 @@ export const AboutMe = () => {
 								<span className="extra__quantity">10</span>
 							</article>
 						</div>
-					</section>
+					</section> */}
 				</section>
 			</Common>
 		</>

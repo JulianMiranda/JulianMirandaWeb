@@ -1,6 +1,7 @@
+import {useState} from 'react';
 import {NavLink} from 'react-router-dom';
 import yo from '../assets/img/yo2.jpeg';
-import {useState} from 'react';
+import pdf from '../assets/pdf/Curriculum_domitila.pdf';
 
 export const Drawerbar = () => {
 	const [openDrawer, setOpenDrawer] = useState(true);
@@ -92,29 +93,49 @@ export const Drawerbar = () => {
 					<div className="user-info__links">
 						<ul className="links__social">
 							<li className="social__option">
-								<a href="#" className="social__link">
+								<a
+									target="_blank"
+									rel="noopener noreferrer"
+									href="https://www.facebook.com/profile.php?id=100095380963227"
+									className="social__link"
+								>
 									<i className="social__icon fa-brands fa-facebook"></i>
 								</a>
 							</li>
 							<li className="social__option">
-								<a href="#" className="social__link">
+								<a
+									target="_blank"
+									rel="noopener noreferrer"
+									href="https://www.linkedin.com/in/julian-miranda-ur%C3%ADa-00b42a18a/"
+									className="social__link"
+								>
 									<i className="social__icon fa-brands fa-linkedin"></i>
 								</a>
 							</li>
 							<li className="social__option">
-								<a href="#" className="social__link">
-									<i className="social__icon fa-brands fa-instagram"></i>
+								<a
+									target="_blank"
+									rel="noopener noreferrer"
+									href="https://github.com/JulianMiranda"
+									className="social__link"
+								>
+									<i className="social__icon fa-brands fa-github"></i>
 								</a>
 							</li>
 						</ul>
 					</div>
 					<div className="user-info__buttons">
-						<a href="#" className="user-info__btn">
+						<a
+							href={pdf}
+							rel="noopener noreferrer"
+							download="Curriculum_JulianMiranda.pdf"
+							className="user-info__btn"
+						>
 							Descargar CV
 						</a>
 					</div>
 					<footer className="user-info__footer">
-						&copy; 2023 Julian Miranda Web
+						&copy; {new Date().getFullYear()} Julian Miranda Web
 					</footer>
 				</section>
 			</nav>
@@ -129,42 +150,3 @@ export const Drawerbar = () => {
 		</>
 	);
 };
-{
-	/* <nav className="layout__menu">
-			<div className="menu__list">
-				<div className="menu__option">
-					<NavLink
-						className="{({isActive})=>`menu__link  ${isActive ? 'active': ''}`}"
-						to="/home"
-					>
-						Home
-					</NavLink>
-				</div>
-
-				<NavLink
-					className="{({isActive})=>`menu__link  ${isActive ? 'active': ''}`}"
-					to="/about-me"
-				>
-					Sobre mi
-				</NavLink>
-				<NavLink
-					className="{({isActive})=>`menu__link  ${isActive ? 'active': ''}`}"
-					to="/curriculum"
-				>
-					Curriculum
-				</NavLink>
-				<NavLink
-					className="{({isActive})=>`menu__link  ${isActive ? 'active': ''}`}"
-					to="/portfolio"
-				>
-					Portfolio
-				</NavLink>
-				<NavLink
-					className="{({isActive})=>`menu__link  ${isActive ? 'active': ''}`}"
-					to="/contact"
-				>
-					Contact
-				</NavLink>
-			</div>
-		</nav> */
-}

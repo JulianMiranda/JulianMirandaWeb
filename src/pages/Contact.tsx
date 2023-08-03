@@ -13,12 +13,24 @@ export const Contact = () => {
 							<h1 className="contact__subtitle">Quito</h1>
 						</div>
 						<div className="contact__data">
-							<i className="contact__icon fa-solid fa-phone"></i>
-							<h1 className="contact__subtitle">+593 962914922</h1>
+							<a
+								target="_blank"
+								rel="noopener noreferrer"
+								href="https://wa.me/+593962914922"
+							>
+								<i className="contact__icon fa-brands fa-whatsapp"></i>
+								<h1 className="contact__subtitle">+593 962914922</h1>
+							</a>
 						</div>
 						<div className="contact__data">
-							<i className="contact__icon fa-solid fa-envelope"></i>
-							<h1 className="contact__subtitle">jmirandauria@gmail.com</h1>
+							<a
+								target="_blank"
+								rel="noopener noreferrer"
+								href="mailto:jmirandauria@gmail.com?Subject=Oportunidad%20de%20desarrollo%20web"
+							>
+								<i className="contact__icon fa-solid fa-envelope"></i>
+								<h1 className="contact__subtitle">jmirandauria@gmail.com</h1>
+							</a>
 						</div>
 						<div className="contact__data">
 							<i className="contact__icon fa-solid fa-circle-check"></i>
