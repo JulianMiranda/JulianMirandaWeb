@@ -1,11 +1,6 @@
 import {Common} from './Common';
 import test1 from '../assets/img/testimonio1.jpg';
 import test2 from '../assets/img/testimonio2.jpg';
-import client1 from '../assets/img/cliente-1.png';
-import client2 from '../assets/img/cliente-2.png';
-import client3 from '../assets/img/cliente-3.png';
-import client4 from '../assets/img/cliente-4.png';
-import client5 from '../assets/img/cliente-5.png';
 
 export const AboutMe = () => {
 	return (
