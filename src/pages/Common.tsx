@@ -1,8 +1,10 @@
 import {Link, NavLink} from 'react-router-dom';
 import yo from '../assets/img/yo2.jpeg';
+import useScreenSize from '../hooks/useScreenSize';
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 export const Common = ({children}: any) => {
+	const {width} = useScreenSize();
 	return (
 		<div className="layout">
 			<aside className="layout__aside">
@@ -86,10 +88,6 @@ export const Common = ({children}: any) => {
 				</section>
 			</aside>
 
-			<div className="layout__menu-toggle">
-				<i className="menu-toggle__icon fa-solid fa-bars"></i>
-				<i className="menu-toggle__icon fa-solid fa-xmark"></i>
-			</div>
 			<main className="layout__content">{children}</main>
 		</div>
 	);

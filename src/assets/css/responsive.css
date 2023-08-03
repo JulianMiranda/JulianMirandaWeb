@@ -48,8 +48,8 @@
 		z-index: 9999;
 		display: block;
 		position: absolute;
-		right: 1rem;
-		top: 1rem;
+		right: 3rem;
+		top: 3rem;
 		width: 4.8rem;
 		height: 4.8rem;
 		line-height: 4.8rem;
@@ -73,8 +73,9 @@
 		opacity: 1;
 	}
 	.fa-xmark {
-		opacity: 0;
+		opacity: 1;
 	}
+
 	.layout__aside {
 		z-index: 999;
 		display: block;
@@ -106,7 +107,7 @@
 		display: inline-block;
 	}
 	.layout__menu {
-		position: static;
+		position: absolute;
 		margin: 3rem 0rem;
 	}
 	.menu__list {
