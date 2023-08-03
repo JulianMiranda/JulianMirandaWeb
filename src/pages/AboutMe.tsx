@@ -133,7 +133,7 @@ export const AboutMe = () => {
 								<div className="review__author">
 									<div className="review__author-info">
 										<h4 className="review__name">Lianet Vazquez</h4>
-										<h5 className="review__company">Developers S.A</h5>
+										<h5 className="review__company">Freelancer</h5>
 									</div>
 									<div className="review__author-icon">
 										<i className="review__icon fa-solid fa-quote-right"></i>
@@ -159,8 +159,8 @@ export const AboutMe = () => {
 								</div>
 								<div className="review__author">
 									<div className="review__author-info">
-										<h4 className="review__name">Miguel Oy</h4>
-										<h5 className="review__company">CEO Way | U2</h5>
+										<h4 className="review__name">Edgar Aquine</h4>
+										<h5 className="review__company">Co-founder, GTS Spain</h5>
 									</div>
 									<div className="review__author-icon">
 										<i className="review__icon fa-solid fa-quote-right"></i>
