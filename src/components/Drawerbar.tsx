@@ -1,7 +1,7 @@
 import {useState} from 'react';
 import {NavLink} from 'react-router-dom';
-import yo from '../assets/img/yo2.jpeg';
-import pdf from '../assets/pdf/Curriculum_domitila.pdf';
+import yo from '../assets/img/yo2.jpeg'; /* 
+import pdf from '../assets/pdf/Curriculum_domitila.pdf'; */
 
 export const Drawerbar = () => {
 	const [openDrawer, setOpenDrawer] = useState(true);
@@ -126,7 +126,8 @@ export const Drawerbar = () => {
 					</div>
 					<div className="user-info__buttons">
 						<a
-							href={pdf}
+							/* href={pdf} */
+							href={'#'}
 							rel="noopener noreferrer"
 							download="Curriculum_JulianMiranda.pdf"
 							className="user-info__btn"

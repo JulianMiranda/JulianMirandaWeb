@@ -1,5 +1,5 @@
-import yo from '../assets/img/yo2.jpeg';
-import pdf from '../assets/pdf/Curriculum_domitila.pdf';
+import yo from '../assets/img/yo2.jpeg'; /* 
+import pdf from '../assets/pdf/Curriculum_domitila.pdf'; */
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 export const Common = ({children}: any) => {
@@ -55,7 +55,8 @@ export const Common = ({children}: any) => {
 					</div>
 					<div className="user-info__buttons">
 						<a
-							href={pdf}
+							/* href={pdf} */
+							href={'#'}
 							rel="noopener noreferrer"
 							download="Curriculum_JulianMiranda.pdf"
 							className="user-info__btn"
