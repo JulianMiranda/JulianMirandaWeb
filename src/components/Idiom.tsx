@@ -1,4 +1,4 @@
-import React, {useContext} from 'react';
+import {useContext} from 'react';
 import {LanguageContext} from '../context/languages/LanguageContext';
 
 export const Idiom = () => {

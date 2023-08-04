@@ -1,4 +1,4 @@
-import React, {createContext, useEffect, useReducer, useState} from 'react';
+import {createContext, useEffect, useReducer, useState} from 'react';
 import {
 	LanguageState,
 	languageReducer,
