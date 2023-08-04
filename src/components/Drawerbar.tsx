@@ -16,7 +16,7 @@ export const Drawerbar = () => {
 		<>
 			<nav
 				style={{
-					right: openDrawer ? 0 : '-45vw'
+					right: openDrawer ? 0 : '-80vw'
 				}}
 				className="layout__menu-drawer"
 			>
@@ -35,6 +35,7 @@ export const Drawerbar = () => {
 					<ul className="menu__list-drawer">
 						<li className="menu__option">
 							<NavLink
+								onClick={_handleButton}
 								to="home"
 								className={({isActive}) =>
 									`menu__link ${isActive ? 'menu__link--active' : ''}`
@@ -47,6 +48,7 @@ export const Drawerbar = () => {
 
 						<li className="menu__option">
 							<NavLink
+								onClick={_handleButton}
 								to="about-me"
 								className={({isActive}) =>
 									`menu__link ${isActive ? 'menu__link--active' : ''}`
@@ -59,6 +61,7 @@ export const Drawerbar = () => {
 
 						<li className="menu__option">
 							<NavLink
+								onClick={_handleButton}
 								to="curriculum"
 								className={({isActive}) =>
 									`menu__link ${isActive ? 'menu__link--active' : ''}`
@@ -71,6 +74,7 @@ export const Drawerbar = () => {
 
 						<li className="menu__option">
 							<NavLink
+								onClick={_handleButton}
 								to="portfolio"
 								className={({isActive}) =>
 									`menu__link ${isActive ? 'menu__link--active' : ''}`
@@ -83,6 +87,7 @@ export const Drawerbar = () => {
 
 						<li className="menu__option">
 							<NavLink
+								onClick={_handleButton}
 								to="contact"
 								className={({isActive}) =>
 									`menu__link ${isActive ? 'menu__link--active' : ''}`

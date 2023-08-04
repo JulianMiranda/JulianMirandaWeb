@@ -160,6 +160,10 @@
 		border-radius: 0;
 		height: 100vh;
 	}
+
+	.idiom__btn {
+		padding: 1rem 2rem;
+	}
 }
 @media (max-width: 800px) {
 	.reviews__container {
