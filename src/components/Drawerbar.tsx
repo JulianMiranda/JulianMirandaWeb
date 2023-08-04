@@ -1,10 +1,13 @@
-import {useState} from 'react';
+import {useContext, useState} from 'react';
 import {NavLink} from 'react-router-dom';
-import yo from '../assets/img/yo2.jpeg'; /* 
+import {LanguageContext} from '../context/languages/LanguageContext';
+import yo from '../assets/img/yo2.jpeg';
+/* 
 import pdf from '../assets/pdf/Curriculum_domitila.pdf'; */
 
 export const Drawerbar = () => {
-	const [openDrawer, setOpenDrawer] = useState(true);
+	const {language} = useContext(LanguageContext);
+	const [openDrawer, setOpenDrawer] = useState(false);
 	const _handleButton = () => {
 		setOpenDrawer(!openDrawer);
 	};
@@ -27,7 +30,7 @@ export const Drawerbar = () => {
 							/>
 						</div>
 						<h2 className="user-info__name">Julian Miranda</h2>
-						<h4 className="user-info__job">Desarrollador FullStack</h4>
+						<h4 className="user-info__job">{language.textFullStack}</h4>
 					</div>
 					<ul className="menu__list-drawer">
 						<li className="menu__option">
@@ -50,7 +53,7 @@ export const Drawerbar = () => {
 								}
 							>
 								<i className="menu__icon fa-solid fa-user"></i>
-								<span className="menu__overlay">Sobre mi</span>
+								<span className="menu__overlay">{language.menuAbout}</span>
 							</NavLink>
 						</li>
 
@@ -74,7 +77,7 @@ export const Drawerbar = () => {
 								}
 							>
 								<i className="menu__icon fa-solid fa-briefcase"></i>
-								<span className="menu__overlay">Portafolio</span>
+								<span className="menu__overlay">{language.menuPortfolio}</span>
 							</NavLink>
 						</li>
 
@@ -86,7 +89,7 @@ export const Drawerbar = () => {
 								}
 							>
 								<i className="menu__icon fa-solid fa-envelope"></i>
-								<span className="menu__overlay">Contacto</span>
+								<span className="menu__overlay">{language.menuContact}</span>
 							</NavLink>
 						</li>
 					</ul>
@@ -132,7 +135,7 @@ export const Drawerbar = () => {
 							download="Curriculum_JulianMiranda.pdf"
 							className="user-info__btn"
 						>
-							Descargar CV
+							{language.dowloadTextButton} CV
 						</a>
 					</div>
 					<footer className="user-info__footer">

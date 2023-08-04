@@ -1,44 +1,51 @@
 import {Common} from './Common';
-import test1 from '../assets/img/testimonio1.jpg';
-import test2 from '../assets/img/testimonio2.jpg';
+import test1 from '../assets/img/Lia.png';
+import test2 from '../assets/img/edgar.jpeg';
+import {useContext} from 'react';
+import {LanguageContext} from '../context/languages/LanguageContext';
 
 export const AboutMe = () => {
+	const {language} = useContext(LanguageContext);
 	return (
 		<>
 			<Common>
 				<section className="content__page content__about">
 					<header className="about__header">
 						<h1 className="about__title">
-							Sobre <span className="title__color">mi</span>
+							{language.titleAbout}{' '}
+							<span className="title__color">{language.titleAboutMe}</span>
 						</h1>
 					</header>
 					<section className="about__personal-info">
 						<article className="personal-info__bio">
-							<p className="personal-info__description">
-								Desarrollador fullstack especializado en aplicaciones móviles.
-								Destaco por mi habilidad para crear soluciones interactivas y de
-								alta calidad tanto en el frontend como en el backend. Siempre
-								busco aprender y estar al día con las últimas tecnologías.
-							</p>
+							<p className="personal-info__description">{language.aboutText}</p>
 						</article>
 						<div className="personal-info__data">
 							<ul className="personal-info__list">
 								<li className="personal-info__option">
-									<span className="personal-info__title">Edad</span>
+									<span className="personal-info__title">
+										{language.aboutAge}
+									</span>
 									<span className="personal-info__value">30</span>
 								</li>
 								<li className="personal-info__option">
-									<span className="personal-info__title">País</span>
+									<span className="personal-info__title">
+										{language.aboutCountry}
+									</span>
 									<span className="personal-info__value">Cuba</span>
 								</li>
 								<li className="personal-info__option">
-									<span className="personal-info__title">Dirección</span>
+									<span className="personal-info__title">
+										{language.aboutAddress}
+									</span>
 									<span className="personal-info__value">
 										Quito, Pichincha, Ecuador
 									</span>
 								</li>
 								<li className="personal-info__option">
-									<span className="personal-info__title">Teléfono</span>
+									<span className="personal-info__title">
+										{language.aboutPhone}
+									</span>
 									<span className="personal-info__value">+593 962914922</span>
 								</li>
 							</ul>
@@ -48,7 +55,10 @@ export const AboutMe = () => {
 					<section className="about__services">
 						<header className="services__header">
 							<h2 className="services__title">
-								Lo que <span className="title__color">hago</span>
+								{language.aboutWhatTitle}{' '}
+								<span className="title__color">
+									{language.aboutWhatTitleDo}
+								</span>
 							</h2>
 						</header>
 
@@ -58,12 +68,11 @@ export const AboutMe = () => {
 									<i className="service__real-icon fa-solid fa-code"></i>
 								</div>
 								<div className="content">
-									<h3 className="service__title">Programación</h3>
+									<h3 className="service__title">
+										{language.aboutWhatSubtitle1}
+									</h3>
 									<p className="service__description">
-										Como apasionado desarrollador web full stack, mi enfoque
-										radica en la creación de soluciones digitales innovadoras y
-										funcionales que impulsan resultados significativos para los
-										usuarios.
+										{language.aboutWhatSubtext1}
 									</p>
 								</div>
 							</article>
@@ -72,11 +81,11 @@ export const AboutMe = () => {
 									<i className="service__real-icon fa-solid fa-chalkboard-user"></i>
 								</div>
 								<div className="content">
-									<h3 className="service__title">Formación</h3>
+									<h3 className="service__title">
+										{language.aboutWhatSubtitle2}
+									</h3>
 									<p className="service__description">
-										Graduado en Ingeniería Automática por la Universidad Central
-										de las Villas, mi formación sólida me capacita para abordar
-										desafíos tecnológicos de manera integral.
+										{language.aboutWhatSubtext2}
 									</p>
 								</div>
 							</article>
@@ -85,11 +94,11 @@ export const AboutMe = () => {
 									<i className="service__real-icon fa-solid fa-computer"></i>
 								</div>
 								<div className="content">
-									<h3 className="service__title">Desarrollo</h3>
+									<h3 className="service__title">
+										{language.aboutWhatSubtitle3}
+									</h3>
 									<p className="service__description">
-										Mi especialidad es el desarrollo de aplicaciones móviles y
-										web de alta calidad, diseñadas para brindar experiencias
-										fluidas y atractivas que superen expectativas.
+										{language.aboutWhatSubtext3}
 									</p>
 								</div>
 							</article>
@@ -98,11 +107,11 @@ export const AboutMe = () => {
 									<i className="service__real-icon fa-solid fa-terminal"></i>
 								</div>
 								<div className="content">
-									<h4 className="service__title">Administracion</h4>
+									<h4 className="service__title">
+										{language.aboutWhatSubtitle4}
+									</h4>
 									<p className="service__description">
-										Gestiono mis proyectos con precisión y creatividad,
-										equilibrando una visión estratégica con una implementación
-										técnica sólida para lograr resultados exitosos y duraderos.
+										{language.aboutWhatSubtext4}
 									</p>
 								</div>
 							</article>
@@ -110,25 +119,19 @@ export const AboutMe = () => {
 					</section>
 					<section className="about__reviews">
 						<header className="reviews__header">
-							<h2 className="reviews__title">Reseñas</h2>
+							<h2 className="reviews__title">{language.aboutReviews}</h2>
 						</header>
 						<div className="reviews__container">
 							<article className="reviews__review">
 								<div className="review__image-container">
 									<img
 										src={test1}
-										className="review__image"
+										className="review__image gray__image"
 										alt="Cara de cliente"
 									/>
 								</div>
 								<div className="review__description">
-									<p className="review__text">
-										Trabajar con Julian Miranda fue un placer absoluto. Su
-										seriedad y profesionalismo se destacaron desde el principio.
-										Demostró un buen desempeño en cada etapa del proyecto y
-										cumplió con todas las tareas dentro de los plazos
-										establecidos. ¡Altamente recomendado!"
-									</p>
+									<p className="review__text">{language.aboutReviewText1}</p>
 								</div>
 								<div className="review__author">
 									<div className="review__author-info">
@@ -149,13 +152,7 @@ export const AboutMe = () => {
 									/>
 								</div>
 								<div className="review__description">
-									<p className="review__text">
-										"No puedo estar más contento con los resultados que [Tu
-										Nombre] entregó. Es un desarrollador web excepcionalmente
-										competente y cumplidor. Su enfoque serio y habilidades
-										profesionales garantizan un desempeño sobresaliente en cada
-										proyecto."
-									</p>
+									<p className="review__text">{language.aboutReviewText2}</p>
 								</div>
 								<div className="review__author">
 									<div className="review__author-info">

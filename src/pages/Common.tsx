@@ -1,10 +1,15 @@
-import yo from '../assets/img/yo2.jpeg'; /* 
+import {useContext} from 'react';
+import yo from '../assets/img/yo2.jpeg';
+import {LanguageContext} from '../context/languages/LanguageContext';
+import {Idiom} from '../components/Idiom';
+/* 
 import pdf from '../assets/pdf/Curriculum_domitila.pdf'; */
 
-// eslint-disable-next-line @typescript-eslint/no-explicit-any
 export const Common = ({children}: any) => {
+	const {language} = useContext(LanguageContext);
 	return (
 		<div className="layout">
+			<Idiom />
 			<aside className="layout__aside">
 				<section className="aside__user-info">
 					<div className="user-info__general">
@@ -16,7 +21,7 @@ export const Common = ({children}: any) => {
 							/>
 						</div>
 						<h2 className="user-info__name">Julian Miranda</h2>
-						<h4 className="user-info__job">Desarrollador FullStack</h4>
+						<h4 className="user-info__job">{language.textFullStack}</h4>
 					</div>
 
 					<div className="user-info__links">
@@ -61,7 +66,7 @@ export const Common = ({children}: any) => {
 							download="Curriculum_JulianMiranda.pdf"
 							className="user-info__btn"
 						>
-							Descargar CV
+							{language.dowloadTextButton} CV
 						</a>
 					</div>
 					<footer className="user-info__footer">

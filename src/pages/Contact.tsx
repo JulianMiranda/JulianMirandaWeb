@@ -1,10 +1,13 @@
+import {useContext} from 'react';
+import {LanguageContext} from '../context/languages/LanguageContext';
 import {Common} from './Common';
 export const Contact = () => {
+	const {language} = useContext(LanguageContext);
 	return (
 		<Common>
 			<section className="content__page content__contact">
 				<header className="contact__header">
-					<h1 className="contact__title">Contacto</h1>
+					<h1 className="contact__title">{language.contactTitle}</h1>
 				</header>
 				<div className="contact__container">
 					<section className="contact__info">
@@ -34,13 +37,17 @@ export const Contact = () => {
 						</div>
 						<div className="contact__data">
 							<i className="contact__icon fa-solid fa-circle-check"></i>
-							<h1 className="contact__subtitle">Desarrollador web</h1>
+							<h1 className="contact__subtitle">{language.contactDev}</h1>
 						</div>
 					</section>
 					<section className="contact__form-box">
 						<header className="contact__form-header">
 							<h3 className="form-header__title">
-								¿Cómo puedo<span className="subtitle__color"> ayudarte?</span>
+								{language.contactSubtitle1}
+								<span className="subtitle__color">
+									{' '}
+									{language.contactSubtitle2}?
+								</span>
 							</h3>
 						</header>
 						<form className="contact__form">
@@ -55,7 +62,7 @@ export const Contact = () => {
 											required
 										/>
 										<label htmlFor="name" className="form__label">
-											Nombre
+											{language.contactName}
 										</label>
 									</div>
 
@@ -68,7 +75,7 @@ export const Contact = () => {
 											required
 										/>
 										<label htmlFor="email" className="form__label">
-											Email
+											{language.contactEmail}
 										</label>
 									</div>
 									<div className="form__group">
@@ -80,7 +87,7 @@ export const Contact = () => {
 											required
 										/>
 										<label htmlFor="name" className="form__label">
-											Asunto
+											{language.contactSubject}
 										</label>
 									</div>
 								</section>
@@ -93,7 +100,7 @@ export const Contact = () => {
 											required
 										></textarea>
 										<label htmlFor="message" className="form__label">
-											Mensaje
+											{language.contactMessage}
 										</label>
 									</div>
 								</section>
@@ -101,7 +108,7 @@ export const Contact = () => {
 							<input
 								type="submit"
 								className="form__button"
-								value="Enviar mensaje"
+								value={language.contactSend}
 							/>
 						</form>
 						<div className="contact__map" id="load-iframe-map">

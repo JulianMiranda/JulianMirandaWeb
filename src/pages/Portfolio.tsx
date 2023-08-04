@@ -4,13 +4,16 @@ import app2 from '../assets/img/galeria-2.jpg';
 import app3 from '../assets/img/galeria-3.jpg';
 import app4 from '../assets/img/galeria-4.jpg';
 import app5 from '../assets/img/galeria-5.jpg';
+import {LanguageContext} from '../context/languages/LanguageContext';
+import {useContext} from 'react';
 
 export const Portfolio = () => {
+	const {language} = useContext(LanguageContext);
 	return (
 		<Common>
 			<section className="content__page content__portfolio">
 				<header className="portfolio__header">
-					<h1 className="portfolio__title">Portafolio</h1>
+					<h1 className="portfolio__title">{language.portfolioTitle}</h1>
 				</header>
 				<section className="portfolio__gallery">
 					<figure className="gallery__item">
@@ -67,7 +70,7 @@ export const Portfolio = () => {
 						</div>
 						<figcaption className="gallery__title">Encarga</figcaption>
 						<i className="gallery__icon fa-solid fa-code-commit"></i>
-						<span className="gallery__category">Videos</span>
+						<span className="gallery__category">App</span>
 					</figure>
 					<figure className="gallery__item">
 						<div className="gallery__container-image">

@@ -1,6 +1,9 @@
+import {useContext} from 'react';
 import {NavLink} from 'react-router-dom';
+import {LanguageContext} from '../context/languages/LanguageContext';
 
 export const Navbar = () => {
+	const {language} = useContext(LanguageContext);
 	return (
 		<nav className="layout__menu">
 			<ul className="menu__list">
@@ -24,7 +27,7 @@ export const Navbar = () => {
 						}
 					>
 						<i className="menu__icon fa-solid fa-user"></i>
-						<span className="menu__overlay">Sobre mi</span>
+						<span className="menu__overlay">{language.menuAbout}</span>
 					</NavLink>
 				</li>
 
@@ -48,7 +51,7 @@ export const Navbar = () => {
 						}
 					>
 						<i className="menu__icon fa-solid fa-briefcase"></i>
-						<span className="menu__overlay">Portafolio</span>
+						<span className="menu__overlay">{language.menuPortfolio}</span>
 					</NavLink>
 				</li>
 
@@ -60,7 +63,7 @@ export const Navbar = () => {
 						}
 					>
 						<i className="menu__icon fa-solid fa-envelope"></i>
-						<span className="menu__overlay">Contacto</span>
+						<span className="menu__overlay">{language.menuContact}</span>
 					</NavLink>
 				</li>
 			</ul>

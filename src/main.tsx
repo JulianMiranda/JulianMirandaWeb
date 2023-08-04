@@ -7,11 +7,14 @@ import './assets/css/responsive.css';
 import './assets/css/loader.css';
 import './assets/css/scroll.css';
 import './assets/css/styles.css';
+import {LanguageProvider} from './context/languages/LanguageContext';
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
 	<React.StrictMode>
-		<BrowserRouter>
-			<App />
-		</BrowserRouter>
+		<LanguageProvider>
+			<BrowserRouter>
+				<App />
+			</BrowserRouter>
+		</LanguageProvider>
 	</React.StrictMode>
 );

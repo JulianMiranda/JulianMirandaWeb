@@ -15,6 +15,7 @@
 	--color-company: #a5a6a7;
 	--color-background-certificates: #f5f5f5;
 	--color-background-contact: #fcfcfc;
+	--color-background-language: #b57edc;
 }
 /* ESTILOS GENERALES */
 html {
@@ -1040,4 +1041,27 @@ body {
 	border-radius: 3rem;
 	cursor: pointer;
 	transition: all 500ms ease-in-out;
+}
+.idiom__btn {
+	position: absolute;
+	margin-top: 3rem;
+	z-index: 99999999;
+	display: inline-block;
+	padding: 1rem 2.7rem;
+	border: 2px solid var(--color-border-reviews);
+	box-shadow: 0 10px 10px -8px var(--color-border-reviews);
+	border-radius: 0rem 3rem 3rem 0rem;
+	transition: all 200ms ease-in-out;
+	margin-left: 0;
+	background-color: var(--color-background-language);
+	color: var(--color-principal);
+	font-size: 2rem;
+}
+.idiom__btn:hover {
+	border: 2px solid var(--color-principal);
+	background-color: var(--color-principal);
+	color: var(--color-background-language);
+}
+.gray__image {
+	filter: grayscale(100%);
 }
