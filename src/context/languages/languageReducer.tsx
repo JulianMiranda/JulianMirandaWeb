@@ -49,7 +49,7 @@ export interface LanguageState {
 		| '"I could not be happier with the results delivered by Julian Miranda. They are an exceptionally skilled and reliable web developer. Their serious approach and professional abilities ensure outstanding performance in every project."';
 	/* Curriculum */
 	curriculumTitle: 'Formación' | 'Education';
-	curriculumUniversity: 'Universidad Martha Abreu' | 'Martha Abreu University';
+	curriculumUniversity: 'Universidad Marta Abreu' | 'Marta Abreu University';
 	curriculumEduTitle1: 'Master desarrollo web' | "Master's in Web Development";
 	curriculumEduText1:
 		| 'Aprendizaje de habilidades avanzadas para diseñar, desarrollar y mantener aplicaciones y sitios web de alta calidad. El plan de estudios incluyó temas como lenguajes de programación (HTML, CSS, JavaScript, etc.), frameworks y bibliotecas populares, desarrollo frontend y backend, bases de datos, seguridad web, experiencia de usuario (UX), optimización y despliegue de aplicaciones, entre otros. Preparación para enfrentar desafíos complejos en el campo de la programación web y contribuir al desarrollo de proyectos web innovadores.'
@@ -96,6 +96,7 @@ export interface LanguageState {
 	curriculumCertificates: 'Certificados' | 'Certificates';
 	/* Portfolio*/
 	portfolioTitle: 'Portafolio' | 'Portfolio';
+	portfolioDownload: 'Descargar' | 'Download';
 	/* Contact*/
 	contactTitle: 'Contacto' | 'Contact';
 	contactDev: 'Desarrollador FullStack' | 'FullStack Developer';
@@ -144,7 +145,7 @@ export const spanishLanguage: LanguageState = {
 	aboutReviewText2:
 		'"No puedo estar más contento con los resultados que Julian Miranda entregó. Es un desarrollador web excepcionalmente competente y cumplidor. Su enfoque serio y habilidades profesionales garantizan un desempeño sobresaliente en cada proyecto."',
 	curriculumTitle: 'Formación',
-	curriculumUniversity: 'Universidad Martha Abreu',
+	curriculumUniversity: 'Universidad Marta Abreu',
 	curriculumEduTitle1: 'Master desarrollo web',
 	curriculumEduTitle2: 'Ingeniero Automático',
 	curriculumEduText1:
@@ -182,6 +183,7 @@ export const spanishLanguage: LanguageState = {
 	curriculumCertificates: 'Certificados',
 	/* Portfolio*/
 	portfolioTitle: 'Portafolio',
+	portfolioDownload: 'Descargar',
 	/* Contact*/
 	contactTitle: 'Contacto',
 	contactDev: 'Desarrollador FullStack',
@@ -230,7 +232,7 @@ export const englishLanguage: LanguageState = {
 	aboutReviewText2:
 		'"I could not be happier with the results delivered by Julian Miranda. They are an exceptionally skilled and reliable web developer. Their serious approach and professional abilities ensure outstanding performance in every project."',
 	curriculumTitle: 'Education',
-	curriculumUniversity: 'Martha Abreu University',
+	curriculumUniversity: 'Marta Abreu University',
 	curriculumEduTitle1: "Master's in Web Development",
 	curriculumEduText1:
 		'Learning advanced skills to design, develop, and maintain high-quality applications and websites. The curriculum included topics such as programming languages (HTML, CSS, JavaScript, etc.), popular frameworks and libraries, frontend and backend development, databases, web security, user experience (UX), application optimization, and deployment, among others. Prepared to tackle complex challenges in the field of web programming and contribute to the development of innovative web projects.',
@@ -269,6 +271,7 @@ export const englishLanguage: LanguageState = {
 	curriculumCertificates: 'Certificates',
 	/* Portfolio*/
 	portfolioTitle: 'Portfolio',
+	portfolioDownload: 'Download',
 	/* Contact*/
 	contactTitle: 'Contact',
 	contactDev: 'FullStack Developer',

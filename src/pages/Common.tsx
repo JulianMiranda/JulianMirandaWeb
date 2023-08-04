@@ -2,8 +2,8 @@ import {useContext} from 'react';
 import yo from '../assets/img/yo2.jpeg';
 import {LanguageContext} from '../context/languages/LanguageContext';
 import {Idiom} from '../components/Idiom';
-/* 
-import pdf from '../assets/pdf/Curriculum_domitila.pdf'; */
+
+import pdf from '../assets/pdf/CV_JulianFullStackDeveloper.pdf';
 
 export const Common = ({children}: any) => {
 	const {language} = useContext(LanguageContext);
@@ -60,8 +60,8 @@ export const Common = ({children}: any) => {
 					</div>
 					<div className="user-info__buttons">
 						<a
-							/* href={pdf} */
-							href={'#'}
+							href={pdf}
+							/* href={'#'} */
 							rel="noopener noreferrer"
 							download="Curriculum_JulianMiranda.pdf"
 							className="user-info__btn"

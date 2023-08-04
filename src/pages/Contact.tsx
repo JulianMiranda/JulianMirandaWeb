@@ -109,10 +109,26 @@ export const Contact = () => {
 								type="submit"
 								className="form__button"
 								value={language.contactSend}
+								onSubmit={(event) => console.log(event)}
 							/>
+							{/* <div className="wrapper">
+								<svg className="animated-check" viewBox="0 0 24 24">
+									<path d="M4.1 12.7L9 17.6 20.3 6.3" fill="none" />{' '}
+								</svg>
+							</div> */}
 						</form>
 						<div className="contact__map" id="load-iframe-map">
-							<div className="lds-dual-ring"></div>
+							<iframe
+								className="contact__iframe"
+								frameBorder={0}
+								scrolling="no"
+								marginHeight={0}
+								marginWidth={0}
+								loading="lazy"
+								referrerPolicy="no-referrer-when-downgrade"
+								src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d4536.097330800159!2d-78.50189596059214!3d-0.14772436143168075!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sec!4v1690686255170!5m2!1ses-419!2sec"
+							></iframe>
+							{/* <div className="lds-dual-ring"></div> */}
 						</div>
 					</section>
 				</div>

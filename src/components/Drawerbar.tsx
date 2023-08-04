@@ -2,8 +2,8 @@ import {useContext, useState} from 'react';
 import {NavLink} from 'react-router-dom';
 import {LanguageContext} from '../context/languages/LanguageContext';
 import yo from '../assets/img/yo2.jpeg';
-/* 
-import pdf from '../assets/pdf/Curriculum_domitila.pdf'; */
+
+import pdf from '../assets/pdf/CV_JulianFullStackDeveloper.pdf';
 
 export const Drawerbar = () => {
 	const {language} = useContext(LanguageContext);
@@ -134,8 +134,8 @@ export const Drawerbar = () => {
 					</div>
 					<div className="user-info__buttons">
 						<a
-							/* href={pdf} */
-							href={'#'}
+							href={pdf}
+							/* href={'#'} */
 							rel="noopener noreferrer"
 							download="Curriculum_JulianMiranda.pdf"
 							className="user-info__btn"

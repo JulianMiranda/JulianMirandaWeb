@@ -1,9 +1,9 @@
 import {Common} from './Common';
-import app1 from '../assets/img/galeria-1.jpg';
-import app2 from '../assets/img/galeria-2.jpg';
-import app3 from '../assets/img/galeria-3.jpg';
-import app4 from '../assets/img/galeria-4.jpg';
-import app5 from '../assets/img/galeria-5.jpg';
+import app1 from '../assets/img/baria.png';
+import app2 from '../assets/img/baria.png';
+import app3 from '../assets/img/baria.png';
+import app4 from '../assets/img/Gal-Mar.png';
+import app5 from '../assets/img/baria.png';
 import {LanguageContext} from '../context/languages/LanguageContext';
 import {useContext} from 'react';
 
@@ -17,36 +17,59 @@ export const Portfolio = () => {
 				</header>
 				<section className="portfolio__gallery">
 					<figure className="gallery__item">
-						<div className="gallery__container-image">
-							<a href="#" className="gallery__link">
+						<a
+							target="_blank"
+							rel="noopener noreferrer"
+							href="https://apps.apple.com/us/app/baria-envios/id6443852982?l=es-MX"
+							className="gallery__link"
+						>
+							<div className="gallery__container-image">
 								<img
 									className="gallery__image animate__animated animate__fadeIn"
 									src={app5}
-									alt=""
+									alt="Baria Envios"
 								/>
-							</a>
-						</div>
-						<figcaption className="gallery__title">Baria Envios</figcaption>
-						<i className="gallery__icon fa-solid fa-code-commit"></i>
-						<span className="gallery__category">App</span>
+							</div>
+							<figcaption className="gallery__title">
+								Baria Envios IOS
+							</figcaption>
+							<i className="gallery__icon fa-solid fa-code-commit"></i>
+							<span className="gallery__category">
+								{language.portfolioDownload}
+							</span>
+						</a>
 					</figure>
 					<figure className="gallery__item">
-						<div className="gallery__container-image">
-							<a href="#" className="gallery__link">
+						<a
+							target="_blank"
+							rel="noopener noreferrer"
+							href="https://play.google.com/store/apps/details?id=com.bariaenvios"
+							className="gallery__link"
+						>
+							<div className="gallery__container-image">
 								<img
 									className="gallery__image animate__animated animate__fadeIn"
 									src={app1}
 									alt=""
 								/>
-							</a>
-						</div>
-						<figcaption className="gallery__title">Encarga Envios</figcaption>
-						<i className="gallery__icon fa-solid fa-code-commit"></i>
-						<span className="gallery__category">App</span>
+							</div>
+							<figcaption className="gallery__title">
+								Baria Envios Android
+							</figcaption>
+							<i className="gallery__icon fa-solid fa-code-commit"></i>
+							<span className="gallery__category">
+								{language.portfolioDownload}
+							</span>
+						</a>
 					</figure>
 					<figure className="gallery__item">
 						<div className="gallery__container-image">
-							<a href="#" className="gallery__link">
+							<a
+								target="_blank"
+								rel="noopener noreferrer"
+								href="https://apps.apple.com/us/app/encargaapp/id6444244340?l=es-MX"
+								className="gallery__link"
+							>
 								<img
 									className="gallery__image animate__animated animate__fadeIn"
 									src={app2}
@@ -54,27 +77,43 @@ export const Portfolio = () => {
 								/>
 							</a>
 						</div>
-						<figcaption className="gallery__title">Baria</figcaption>
+						<figcaption className="gallery__title">Encarga IOS</figcaption>
 						<i className="gallery__icon fa-solid fa-code-commit"></i>
-						<span className="gallery__category">App</span>
+						<span className="gallery__category">
+							{language.portfolioDownload}
+						</span>
 					</figure>
 					<figure className="gallery__item">
-						<div className="gallery__container-image">
-							<a href="#" className="gallery__link">
+						<a
+							target="_blank"
+							rel="noopener noreferrer"
+							href="https://play.google.com/store/apps/details?id=com.enviosencarga"
+							className="gallery__link"
+						>
+							<div className="gallery__container-image">
 								<img
 									className="gallery__image animate__animated animate__fadeIn"
 									src={app3}
 									alt=""
 								/>
-							</a>
-						</div>
-						<figcaption className="gallery__title">Encarga</figcaption>
-						<i className="gallery__icon fa-solid fa-code-commit"></i>
-						<span className="gallery__category">App</span>
+							</div>
+							<figcaption className="gallery__title">
+								Encarga Android
+							</figcaption>
+							<i className="gallery__icon fa-solid fa-code-commit"></i>
+							<span className="gallery__category">
+								{language.portfolioDownload}
+							</span>
+						</a>
 					</figure>
 					<figure className="gallery__item">
 						<div className="gallery__container-image">
-							<a href="#" className="gallery__link">
+							<a
+								target="_blank"
+								rel="noopener noreferrer"
+								href="https://play.google.com/store/apps/details?id=com.cormapiapp.app"
+								className="gallery__link"
+							>
 								<img
 									className="gallery__image animate__animated animate__fadeIn"
 									src={app4}
@@ -82,9 +121,13 @@ export const Portfolio = () => {
 								/>
 							</a>
 						</div>
-						<figcaption className="gallery__title">GTS</figcaption>
+						<figcaption className="gallery__title">
+							Mariachis en Quito
+						</figcaption>
 						<i className="gallery__icon fa-solid fa-code-commit"></i>
-						<span className="gallery__category">App</span>
+						<span className="gallery__category">
+							{language.portfolioDownload}
+						</span>
 					</figure>
 				</section>
 			</section>

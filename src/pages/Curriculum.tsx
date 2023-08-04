@@ -61,9 +61,7 @@ export const Curriculum = () => {
 							<article className="timelines__timeline">
 								<header className="timeline__header">
 									<h4 className="timeline__year">2019-Act</h4>
-									<span className="timeline__company">
-										{language.curriculumExperience}
-									</span>
+									<span className="timeline__company">GTS Spain</span>
 								</header>
 								<div className="timeline__divider"></div>
 								<div className="timeline__description">
