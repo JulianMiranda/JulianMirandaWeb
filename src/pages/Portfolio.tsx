@@ -1,9 +1,9 @@
 import {Common} from './Common';
-import app1 from '../assets/img/baria.png';
-import app2 from '../assets/img/baria.png';
-import app3 from '../assets/img/baria.png';
-import app4 from '../assets/img/Gal-Mar.png';
-import app5 from '../assets/img/baria.png';
+import app1 from '../assets/img/bariaenvios.png';
+import app2 from '../assets/img/encargaEnvios.png';
+import app3 from '../assets/img/encarga.png';
+import app4 from '../assets/img/mariachis.png';
+import app5 from '../assets/img/bariaios.png';
 import {LanguageContext} from '../context/languages/LanguageContext';
 import {useContext} from 'react';
 
